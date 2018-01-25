@@ -61,7 +61,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->render('index',
+                [
+                    "dato"=>"enviando a la vista"
+                ]);
+    }
+    
+    public function actionNueva(){
+        return $this->render('vistanueva');
     }
 
     /**
